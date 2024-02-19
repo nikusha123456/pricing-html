@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body style="background-color: black">
+    <section
+      class="pricing"
+      style="
+        background-color: transparent;
+        padding-top: 64px;
+        padding-bottom: 64px;
+      "
+    >
+      <div class="container">
+        <div class="switching-div">
+          <label class="switch" style="margin-right: 16px">
+            <input type="checkbox" class="toggleB" />
+            <span class="slider"></span>
+          </label>
+          <label id="month-label" style="color: #fff; font-size: 24px"
+            >Monthly</label
+          >
+          <label
+            id="yearly-label"
+            style="color: #fff; font-size: 24px; display: none"
+            >Yearly</label
+          >
+        </div>
+        <div class="cards-div" id="monthly">
+          <!-- Card 1 -->
+          <div class="card">
+            <div style="flex-grow: 1">
+              <div class="card-inside">
+                <div style="padding: 0 16px">
+                  <h1 class="package-name">Basic+</h1>
+                  <h1 class="price-h1">
+                    <span
+                      style="
+                        position: absolute;
+                        top: -35px;
+                        left: 15px;
+                        font-size: 18px;
+                        color: #fff;
+                      "
+                      >US$</span
+                    >
+                    18
+                  </h1>
+                  <span style="color: #fff; font-size: 12px">Every Month</span>
+                  <p class="saving-price">Save 64.8 $ on Yearly plan</p>
+                  <span style="color: #fff; font-size: 12px"
+                    >30 day free trial</span
+                  >
+                </div>
+                <div class="card-second-half">
+                  <div style="padding: 0 16px; margin-bottom: 16px">
+                    <button id="subscribe">Start Free Trial</button>
+                  </div>
+                  <div style="margin-top: 16px; border-top: 1px solid gray">
+                    <ul style="margin: 0; padding: 8px 16px">
+                      <li class="tool-list">
+                        <svg width="21" height="21" viewBox="0 0 24 24">
+                          <path
+                            stroke="#02F9FB"
+                            fill-rule="evenodd"
+                            d="M11.5 3C16.187 3 20 6.813 20 11.5C20 16.187 16.187 20 11.5 20C6.813 20 3 16.187 3 11.5C3 6.813 6.813 3 11.5 3ZM11.5 4C7.364 4 4 7.364 4 11.5C4 15.636 7.364 19 11.5 19C15.636 19 19 15.636 19 11.5C19 7.364 15.636 4 11.5 4ZM14.3012 9.0425L15.0082 9.7505L10.4482 14.3105L7.9912 11.8535L8.6982 11.1465L10.4482 12.8965L14.3012 9.0425Z"
+                          ></path>
+                        </svg>
+                        <h3 class="first-h3">
+                          All indicators for 15m , 30 , 1h charts
+                        </h3>
+                      </li>
+                      <li class="tool-list">
+                        <svg width="21" height="21" viewBox="0 0 24 24">
+                          <path
+                            stroke="#02F9FB"
+                            fill-rule="evenodd"
+                            d="M11.5 3C16.187 3 20 6.813 20 11.5C20 16.187 16.187 20 11.5 20C6.813 20 3 16.187 3 11.5C3 6.813 6.813 3 11.5 3ZM11.5 4C7.364 4 4 7.364 4 11.5C4 15.636 7.364 19 11.5 19C15.636 19 19 15.636 19 11.5C19 7.364 15.636 4 11.5 4ZM14.3012 9.0425L15.0082 9.7505L10.4482 14.3105L7.9912 11.8535L8.6982 11.1465L10.4482 12.8965L14.3012 9.0425Z"
+                          ></path>
+                        </svg>
+                        <h3 class="first-h3">Long and Short call signals</h3>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="card">
+            <div style="flex-grow: 1">
+              <div class="card-inside">
+                <div style="padding: 0 16px">
+                  <h1 class="package-name">Premium</h1>
+                  <h1 class="price-h1">
+                    <span
+                      style="
+                        position: absolute;
+                        top: -35px;
+                        left: 15px;
+                        font-size: 18px;
+                        color: #fff;
+                      "
+                      >US$</span
+                    >
+                    40
+                  </h1>
+                  <span style="color: #fff; font-size: 12px">Every Month</span>
+                  <p class="saving-price">Save 144 $ on Yearly plan</p>
+                  <span style="color: #fff; font-size: 12px"
+                    >30 day free trial</span
+                  >
+                </div>
+                <div class="card-second-half">
+                  <div style="padding: 0 16px; margin-bottom: 16px">
+                    <button id="subscribe">Start Free Trial</button>
+                  </div>
+                  <div style="margin-top: 16px; border-top: 1px solid gray">
+                    <ul style="margin: 0; padding: 8px 16px">
+                      <li class="tool-list">
+                        <svg
+                          role="img"
+                          width="21"
+                          height="21"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke="#02F9FB"
+                            fill-rule="evenodd"
+                            d="M11.5 3C16.187 3 20 6.813 20 11.5C20 16.187 16.187 20 11.5 20C6.813 20 3 16.187 3 11.5C3 6.813 6.813 3 11.5 3ZM11.5 4C7.364 4 4 7.364 4 11.5C4 15.636 7.364 19 11.5 19C15.636 19 19 15.636 19 11.5C19 7.364 15.636 4 11.5 4ZM14.3012 9.0425L15.0082 9.7505L10.4482 14.3105L7.9912 11.8535L8.6982 11.1465L10.4482 12.8965L14.3012 9.0425Z"
+                          ></path>
+                        </svg>
+                        <h3 class="first-h3">
+                          MagnetZone Horizon for any timeframe
+                        </h3>
+                      </li>
+                      <li class="tool-list">
+                        <svg
+                          role="img"
+                          width="21"
+                          height="21"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke="#02F9FB"
+                            fill-rule="evenodd"
+                            d="M11.5 3C16.187 3 20 6.813 20 11.5C20 16.187 16.187 20 11.5 20C6.813 20 3 16.187 3 11.5C3 6.813 6.813 3 11.5 3ZM11.5 4C7.364 4 4 7.364 4 11.5C4 15.636 7.364 19 11.5 19C15.636 19 19 15.636 19 11.5C19 7.364 15.636 4 11.5 4ZM14.3012 9.0425L15.0082 9.7505L10.4482 14.3105L7.9912 11.8535L8.6982 11.1465L10.4482 12.8965L14.3012 9.0425Z"
+                          ></path>
+                        </svg>
+                        <h3 class="first-h3">NeonZenith for any timeframe</h3>
+                      </li>
+                      <li class="tool-list">
+                        <svg
+                          role="img"
+                          width="21"
+                          height="21"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke="#02F9FB"
+                            fill-rule="evenodd"
+                            d="M11.5 3C16.187 3 20 6.813 20 11.5C20 16.187 16.187 20 11.5 20C6.813 20 3 16.187 3 11.5C3 6.813 6.813 3 11.5 3ZM11.5 4C7.364 4 4 7.364 4 11.5C4 15.636 7.364 19 11.5 19C15.636 19 19 15.636 19 11.5C19 7.364 15.636 4 11.5 4ZM14.3012 9.0425L15.0082 9.7505L10.4482 14.3105L7.9912 11.8535L8.6982 11.1465L10.4482 12.8965L14.3012 9.0425Z"
+                          ></path>
+                        </svg>
+                        <h3 class="first-h3">
+                          ApexAlpha Clouds For : 5m , 15m , 30m , 1h , 1D
+                          timeframe
+                        </h3>
+                      </li>
+                      <li class="tool-list">
+                        <svg
+                          role="img"
+                          width="21"
+                          height="21"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke="#02F9FB"
+                            fill-rule="evenodd"
+                            d="M11.5 3C16.187 3 20 6.813 20 11.5C20 16.187 16.187 20 11.5 20C6.813 20 3 16.187 3 11.5C3 6.813 6.813 3 11.5 3ZM11.5 4C7.364 4 4 7.364 4 11.5C4 15.636 7.364 19 11.5 19C15.636 19 19 15.636 19 11.5C19 7.364 15.636 4 11.5 4ZM14.3012 9.0425L15.0082 9.7505L10.4482 14.3105L7.9912 11.8535L8.6982 11.1465L10.4482 12.8965L14.3012 9.0425Z"
+                          ></path>
+                        </svg>
+                        <h3 class="first-h3">
+                          CandleSniper For : 5m , 15m , 30m , 1h , 1D timeframe
+                        </h3>
+                      </li>
+                      <li class="tool-list">
+                        <svg
+                          role="img"
+                          width="21"
+                          height="21"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke="#02F9FB"
+                            fill-rule="evenodd"
+                            d="M11.5 3C16.187 3 20 6.813 20 11.5C20 16.187 16.187 20 11.5 20C6.813 20 3 16.187 3 11.5C3 6.813 6.813 3 11.5 3ZM11.5 4C7.364 4 4 7.364 4 11.5C4 15.636 7.364 19 11.5 19C15.636 19 19 15.636 19 11.5C19 7.364 15.636 4 11.5 4ZM14.3012 9.0425L15.0082 9.7505L10.4482 14.3105L7.9912 11.8535L8.6982 11.1465L10.4482 12.8965L14.3012 9.0425Z"
+                          ></path>
+                        </svg>
+                        <h3 class="first-h3">
+                          ExodusEye Screeener for 30 Symbols
+                        </h3>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card3">
+            <button class="best-value">Best Value</button>
+
+            <div style="flex-grow: 1">
+              <div class="card-inside">
+                <div style="padding: 0 16px">
+                  <h1 class="package-name">Elite</h1>
+                  <h1 class="price-h1">
+                    <span
+                      style="
+                        position: absolute;
+                        top: -35px;
+                        left: -20px;
+                        font-size: 18px;
+                        color: #fff;
+                      "
+                      >US$</span
+                    >
+                    49.90
+                  </h1>
+                  <span style="color: #fff; font-size: 12px">Every Month</span>
+                  <p class="saving-price">Save 179.64 $ on Yearly plan</p>
+                  <span style="color: #fff; font-size: 12px"
+                    >30 day free trial</span
+                  >
+                </div>
+                <div class="card-second-half">
+                  <div style="padding: 0 16px; margin-bottom: 16px">
+                    <button id="subscribe">Start Free Trial</button>
+                  </div>
+                  <div style="margin-top: 16px; border-top: 1px solid gray">
+                    <ul style="margin: 0; padding: 8px 16px">
+                      <li class="tool-list">
+                        <svg
+                          role="img"
+                          width="21"
+                          height="21"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke="#02F9FB"
+                            fill-rule="evenodd"
+                            d="M11.5 3C16.187 3 20 6.813 20 11.5C20 16.187 16.187 20 11.5 20C6.813 20 3 16.187 3 11.5C3 6.813 6.813 3 11.5 3ZM11.5 4C7.364 4 4 7.364 4 11.5C4 15.636 7.364 19 11.5 19C15.636 19 19 15.636 19 11.5C19 7.364 15.636 4 11.5 4ZM14.3012 9.0425L15.0082 9.7505L10.4482 14.3105L7.9912 11.8535L8.6982 11.1465L10.4482 12.8965L14.3012 9.0425Z"
+                          ></path>
+                        </svg>
+                        <h3 class="first-h3">
+                          All indicator for any timeframe
+                        </h3>
+                      </li>
+                      <li class="tool-list">
+                        <svg
+                          role="img"
+                          width="21"
+                          height="21"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke="#02F9FB"
+                            fill-rule="evenodd"
+                            d="M11.5 3C16.187 3 20 6.813 20 11.5C20 16.187 16.187 20 11.5 20C6.813 20 3 16.187 3 11.5C3 6.813 6.813 3 11.5 3ZM11.5 4C7.364 4 4 7.364 4 11.5C4 15.636 7.364 19 11.5 19C15.636 19 19 15.636 19 11.5C19 7.364 15.636 4 11.5 4ZM14.3012 9.0425L15.0082 9.7505L10.4482 14.3105L7.9912 11.8535L8.6982 11.1465L10.4482 12.8965L14.3012 9.0425Z"
+                          ></path>
+                        </svg>
+                        <h3 class="first-h3">
+                          ExodusEye Screener for 40 symbols
+                        </h3>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards-div" style="display: none" id="yearly">
+          <!-- Card 1 -->
+          <div class="card">
+            <div style="flex-grow: 1">
+              <div class="card-inside">
+                <div style="padding: 0 16px">
+                  <h1 class="package-name">Basic+</h1>
+                  <h1 class="price-h1">
+                    <span
+                      style="
+                        position: absolute;
+                        top: -35px;
+                        left: -30px;
+                        font-size: 18px;
+                        color: #fff;
+                      "
+                      >US$</span
+                    >
+                    151.20
+                  </h1>
+                  <span style="color: #fff; font-size: 12px">Every Year</span>
+                  <p class="saving-price">You save 64.8 $ on this plan</p>
+                  <span style="color: #fff; font-size: 12px"
+                    >30 day free trial</span
+                  >
+                </div>
+                <div class="card-second-half">
+                  <div style="padding: 0 16px; margin-bottom: 16px">
+                    <button id="subscribe">Start Free Trial</button>
+                  </div>
+                  <div style="margin-top: 16px; border-top: 1px solid gray">
+                    <ul style="margin: 0; padding: 8px 16px">
+                      <li class="tool-list">
+                        <svg width="21" height="21" viewBox="0 0 24 24">
+                          <path
+                            stroke="#02F9FB"
+                            fill-rule="evenodd"
+                            d="M11.5 3C16.187 3 20 6.813 20 11.5C20 16.187 16.187 20 11.5 20C6.813 20 3 16.187 3 11.5C3 6.813 6.813 3 11.5 3ZM11.5 4C7.364 4 4 7.364 4 11.5C4 15.636 7.364 19 11.5 19C15.636 19 19 15.636 19 11.5C19 7.364 15.636 4 11.5 4ZM14.3012 9.0425L15.0082 9.7505L10.4482 14.3105L7.9912 11.8535L8.6982 11.1465L10.4482 12.8965L14.3012 9.0425Z"
+                          ></path>
+                        </svg>
+                        <h3 class="first-h3">
+                          All indicators for 15m , 30 , 1h charts
+                        </h3>
+                      </li>
+                      <li class="tool-list">
+                        <svg width="21" height="21" viewBox="0 0 24 24">
+                          <path
+                            stroke="#02F9FB"
+                            fill-rule="evenodd"
+                            d="M11.5 3C16.187 3 20 6.813 20 11.5C20 16.187 16.187 20 11.5 20C6.813 20 3 16.187 3 11.5C3 6.813 6.813 3 11.5 3ZM11.5 4C7.364 4 4 7.364 4 11.5C4 15.636 7.364 19 11.5 19C15.636 19 19 15.636 19 11.5C19 7.364 15.636 4 11.5 4ZM14.3012 9.0425L15.0082 9.7505L10.4482 14.3105L7.9912 11.8535L8.6982 11.1465L10.4482 12.8965L14.3012 9.0425Z"
+                          ></path>
+                        </svg>
+                        <h3 class="first-h3">Long and Short call signals</h3>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="card">
+            <div style="flex-grow: 1">
+              <div class="card-inside">
+                <div style="padding: 0 16px">
+                  <h1 class="package-name">Premium</h1>
+                  <h1 class="price-h1">
+                    <span
+                      style="
+                        position: absolute;
+                        top: -35px;
+                        left: -15px;
+                        font-size: 18px;
+                        color: #fff;
+                      "
+                      >US$</span
+                    >
+                    336
+                  </h1>
+                  <span style="color: #fff; font-size: 12px">Every Year</span>
+                  <p class="saving-price">You save 144 $ on this plan</p>
+                  <span style="color: #fff; font-size: 12px"
+                    >30 day free trial</span
+                  >
+                </div>
+                <div class="card-second-half">
+                  <div style="padding: 0 16px; margin-bottom: 16px">
+                    <button id="subscribe">Start Free Trial</button>
+                  </div>
+                  <div style="margin-top: 16px; border-top: 1px solid gray">
+                    <ul style="margin: 0; padding: 8px 16px">
+                      <li class="tool-list">
+                        <svg
+                          role="img"
+                          width="21"
+                          height="21"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke="#02F9FB"
+                            fill-rule="evenodd"
+                            d="M11.5 3C16.187 3 20 6.813 20 11.5C20 16.187 16.187 20 11.5 20C6.813 20 3 16.187 3 11.5C3 6.813 6.813 3 11.5 3ZM11.5 4C7.364 4 4 7.364 4 11.5C4 15.636 7.364 19 11.5 19C15.636 19 19 15.636 19 11.5C19 7.364 15.636 4 11.5 4ZM14.3012 9.0425L15.0082 9.7505L10.4482 14.3105L7.9912 11.8535L8.6982 11.1465L10.4482 12.8965L14.3012 9.0425Z"
+                          ></path>
+                        </svg>
+                        <h3 class="first-h3">
+                          MagnetZone Horizon for any timeframe
+                        </h3>
+                      </li>
+                      <li class="tool-list">
+                        <svg
+                          role="img"
+                          width="21"
+                          height="21"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke="#02F9FB"
+                            fill-rule="evenodd"
+                            d="M11.5 3C16.187 3 20 6.813 20 11.5C20 16.187 16.187 20 11.5 20C6.813 20 3 16.187 3 11.5C3 6.813 6.813 3 11.5 3ZM11.5 4C7.364 4 4 7.364 4 11.5C4 15.636 7.364 19 11.5 19C15.636 19 19 15.636 19 11.5C19 7.364 15.636 4 11.5 4ZM14.3012 9.0425L15.0082 9.7505L10.4482 14.3105L7.9912 11.8535L8.6982 11.1465L10.4482 12.8965L14.3012 9.0425Z"
+                          ></path>
+                        </svg>
+                        <h3 class="first-h3">NeonZenith for any timeframe</h3>
+                      </li>
+                      <li class="tool-list">
+                        <svg
+                          role="img"
+                          width="21"
+                          height="21"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke="#02F9FB"
+                            fill-rule="evenodd"
+                            d="M11.5 3C16.187 3 20 6.813 20 11.5C20 16.187 16.187 20 11.5 20C6.813 20 3 16.187 3 11.5C3 6.813 6.813 3 11.5 3ZM11.5 4C7.364 4 4 7.364 4 11.5C4 15.636 7.364 19 11.5 19C15.636 19 19 15.636 19 11.5C19 7.364 15.636 4 11.5 4ZM14.3012 9.0425L15.0082 9.7505L10.4482 14.3105L7.9912 11.8535L8.6982 11.1465L10.4482 12.8965L14.3012 9.0425Z"
+                          ></path>
+                        </svg>
+                        <h3 class="first-h3">
+                          ApexAlpha Clouds For : 5m , 15m , 30m , 1h , 1D
+                          timeframe
+                        </h3>
+                      </li>
+                      <li class="tool-list">
+                        <svg
+                          role="img"
+                          width="21"
+                          height="21"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke="#02F9FB"
+                            fill-rule="evenodd"
+                            d="M11.5 3C16.187 3 20 6.813 20 11.5C20 16.187 16.187 20 11.5 20C6.813 20 3 16.187 3 11.5C3 6.813 6.813 3 11.5 3ZM11.5 4C7.364 4 4 7.364 4 11.5C4 15.636 7.364 19 11.5 19C15.636 19 19 15.636 19 11.5C19 7.364 15.636 4 11.5 4ZM14.3012 9.0425L15.0082 9.7505L10.4482 14.3105L7.9912 11.8535L8.6982 11.1465L10.4482 12.8965L14.3012 9.0425Z"
+                          ></path>
+                        </svg>
+                        <h3 class="first-h3">
+                          CandleSniper For : 5m , 15m , 30m , 1h , 1D timeframe
+                        </h3>
+                      </li>
+                      <li class="tool-list">
+                        <svg
+                          role="img"
+                          width="21"
+                          height="21"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke="#02F9FB"
+                            fill-rule="evenodd"
+                            d="M11.5 3C16.187 3 20 6.813 20 11.5C20 16.187 16.187 20 11.5 20C6.813 20 3 16.187 3 11.5C3 6.813 6.813 3 11.5 3ZM11.5 4C7.364 4 4 7.364 4 11.5C4 15.636 7.364 19 11.5 19C15.636 19 19 15.636 19 11.5C19 7.364 15.636 4 11.5 4ZM14.3012 9.0425L15.0082 9.7505L10.4482 14.3105L7.9912 11.8535L8.6982 11.1465L10.4482 12.8965L14.3012 9.0425Z"
+                          ></path>
+                        </svg>
+                        <h3 class="first-h3">
+                          ExodusEye Screeener for 30 Symbols
+                        </h3>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card3">
+            <button class="best-value">Best Value</button>
+
+            <div style="flex-grow: 1">
+              <div class="card-inside">
+                <div style="padding: 0 16px">
+                  <h1 class="package-name">Elite</h1>
+                  <h1 class="price-h1">
+                    <span
+                      style="
+                        position: absolute;
+                        top: -35px;
+                        left: -20px;
+                        font-size: 18px;
+                        color: #fff;
+                      "
+                      >US$</span
+                    >
+                    419.16
+                  </h1>
+                  <span style="color: #fff; font-size: 12px">Every Year</span>
+                  <p class="saving-price">You save 179.64 $ on this plan</p>
+                  <span style="color: #fff; font-size: 12px"
+                    >30 day free trial</span
+                  >
+                </div>
+                <div class="card-second-half">
+                  <div style="padding: 0 16px; margin-bottom: 16px">
+                    <button id="subscribe">Start Free Trial</button>
+                  </div>
+                  <div style="margin-top: 16px; border-top: 1px solid gray">
+                    <ul style="margin: 0; padding: 8px 16px">
+                      <li class="tool-list">
+                        <svg
+                          role="img"
+                          width="21"
+                          height="21"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke="#02F9FB"
+                            fill-rule="evenodd"
+                            d="M11.5 3C16.187 3 20 6.813 20 11.5C20 16.187 16.187 20 11.5 20C6.813 20 3 16.187 3 11.5C3 6.813 6.813 3 11.5 3ZM11.5 4C7.364 4 4 7.364 4 11.5C4 15.636 7.364 19 11.5 19C15.636 19 19 15.636 19 11.5C19 7.364 15.636 4 11.5 4ZM14.3012 9.0425L15.0082 9.7505L10.4482 14.3105L7.9912 11.8535L8.6982 11.1465L10.4482 12.8965L14.3012 9.0425Z"
+                          ></path>
+                        </svg>
+                        <h3 class="first-h3">
+                          All indicator for any timeframe
+                        </h3>
+                      </li>
+                      <li class="tool-list">
+                        <svg
+                          role="img"
+                          width="21"
+                          height="21"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke="#02F9FB"
+                            fill-rule="evenodd"
+                            d="M11.5 3C16.187 3 20 6.813 20 11.5C20 16.187 16.187 20 11.5 20C6.813 20 3 16.187 3 11.5C3 6.813 6.813 3 11.5 3ZM11.5 4C7.364 4 4 7.364 4 11.5C4 15.636 7.364 19 11.5 19C15.636 19 19 15.636 19 11.5C19 7.364 15.636 4 11.5 4ZM14.3012 9.0425L15.0082 9.7505L10.4482 14.3105L7.9912 11.8535L8.6982 11.1465L10.4482 12.8965L14.3012 9.0425Z"
+                          ></path>
+                        </svg>
+                        <h3 class="first-h3">
+                          ExodusEye Screener for 40 symbols
+                        </h3>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        max-width: 72rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .switching-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 32px;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        background-color: #030315;
+        padding: 16px;
+        border-radius: 20px;
+        box-shadow: 0 -6px 16px 0 rgba(0, 0, 0, 0.2),
+          0 -12px 32px 0 rgba(52, 52, 52, 1);
+        border: 1px solid #333333;
+        max-width: 300px;
+      }
+
+      .cards-div {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 2rem;
+      }
+
+      @media (min-width: 976px) {
+        .cards-div {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        .first-h3 {
+          flex-grow: 1;
+        }
+      }
+
+      .first-h3 {
+        text-align: left;
+        color: #fff;
+        font-size: 14px;
+        width: 100%;
+      }
+
+      #subscribe:hover {
+        background-color: #315846;
+      }
+
+      #subscribe {
+        color: #fff;
+        background-color: #3f7652;
+        padding: 10px 16px;
+        border-radius: 9999px;
+        border: none;
+        cursor: pointer;
+        width: 190px;
+      }
+
+      .tool-list {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+      }
+
+      .best-value {
+        position: absolute;
+        top: -0.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-inline: 10px;
+        font-size: 14px;
+        background-color: rgb(2, 249, 251);
+        font-weight: 700;
+        height: 30px;
+        border: none;
+        outline: none;
+      }
+
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+      }
+
+      .card-inside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+      }
+
+      .package-name {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #fff;
+      }
+
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: transparent;
+        transition: 0.4s;
+        border-radius: 34px;
+      }
+
+      .price-h1 {
+        position: relative;
+        color: #fff;
+        font-size: 5rem;
+        line-height: 6rem;
+        font-weight: 700;
+        margin: 0;
+      }
+
+      .card3 {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        background-color: #051211;
+        padding: 16px;
+        border-radius: 20px;
+        box-shadow: 0 -4px 12px 0 rgba(255, 255, 255, 0.2),
+          0 -6px 24px 0 rgb(255, 255, 255);
+        border: 1px solid #fff;
+        max-width: 300px;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: #09f1f4;
+        transition: 0.4s;
+        border-radius: 50%;
+      }
+
+      .saving-price {
+        color: rgb(34, 197, 94);
+        font-weight: 700;
+        padding: 8px 0;
+      }
+
+      input:checked + .slider {
+        background-color: transparent;
+      }
+
+      input:checked + .slider:before {
+        background-color: rgb(241, 241, 72);
+        transform: translateX(26px);
+      }
+
+      input:focus + .slider {
+        box-shadow: 0 0 1px white;
+      }
+
+      .card-second-half {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .card-second-half > :not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    </style>
+
+    <script>
+      const button = document.querySelector(".toggleB");
+      const monthly = document.getElementById("monthly");
+      const yearly = document.getElementById("yearly");
+      const monthlylabel = document.getElementById("month-label");
+      const yearlylabel = document.getElementById("yearly-label");
+
+      let checked = false;
+
+      button.addEventListener("click", () => {
+        checked = !checked;
+
+        if (checked) {
+          monthly.style.display = "none";
+          yearly.style.display = "grid";
+          monthlylabel.style.display = "none";
+          yearlylabel.style.display = "block";
+        } else {
+          monthly.style.display = "grid";
+          yearly.style.display = "none";
+          monthlylabel.style.display = "block";
+          yearlylabel.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
